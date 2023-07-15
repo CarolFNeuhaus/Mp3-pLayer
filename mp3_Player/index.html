@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html id="html" lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mp3 Player</title>
+    <link rel="stylesheet" href="mp3.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+</head>
+<body id="body">
+    <img id="img" src="">
+    <div class="descricao">
+        <h2 id="nome"></h2>
+        <i id="artista"></i>
+    </div>
+
+    <div class="duracao">
+        <div class="barra">
+            <progress id="progress" value="0" max="1"></progress>
+            <div class="ponto"></div>
+        </div>
+        <div class="tempo">
+            <p id="inicio" class="inicio">0:00</p>
+            <p id="fim" class="fim"></p>
+        </div>
+    </div>
+
+    <div class="player">
+        <i id="anterior" class="fas fa-forward fa-rotate-180 botao-setas"></i>
+        <i id="botaoPlay" class="fas fa-play-circle botao-play"></i>
+        <i id="botaoPause" class="fas fa-pause-circle botao-pause"></i>
+        <i id="proxima" class="fas fa-forward botao-setas"></i>
+
+    </div>
+    <audio id="audio" src=""></audio>
+    <script src="mp3.js"></script>
+</body>
+</html>
